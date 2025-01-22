@@ -1,0 +1,190 @@
+/* === Fuente general y reset básico === */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: black; /* Fondo negro */
+  color: white;
+}
+
+/* === HEADER === */
+header {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+  color: gold; /* Texto dorado en el header */
+  margin-bottom: 0;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* === NAV === */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: silver;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: yellow; /* Al pasar el cursor, el enlace se vuelve amarillo */
+}
+
+/* === MAIN === */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  min-height: calc(100vh - 160px); /* Ajuste según el header y footer */
+}
+
+#categorias {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* === CATEGORÍAS === */
+.categoria {
+  display: none; /* Por defecto, las secciones están ocultas */
+}
+
+.categoria.active {
+  display: block; /* Muestra la sección activa */
+}
+
+.categoria h2 {
+  margin-top: 0;
+  color: gold;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* === PRODUCTOS (Grid) === */
+.productos {
+  display: grid;
+  /* Más columnas para lucir más productos en cada fila */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.producto {
+  background-color: #333;
+  padding: 10px;
+  border: 1px solid silver;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+.producto img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.producto p {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+/* === BOTÓN Agregar === */
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+/* === CARRITO (aside) === */
+#carrito {
+  width: 300px;
+  background-color: #111;
+  padding: 20px;
+  border-left: 2px solid silver;
+  border-radius: 0 0 0 0; /* Ajusta si quieres esquinas redondeadas */
+  position: relative;
+}
+
+#carrito h2 {
+  margin-top: 0;
+}
+
+#lista-carrito {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+#lista-carrito li {
+  margin: 5px 0;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0 0 10px;
+}
+
+footer img {
+  width: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+footer img:hover {
+  transform: scale(1.1);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 992px) {
+  main {
+    flex-direction: column;
+  }
+
+  #carrito {
+    width: 100%;
+    border-left: none;
+    border-top: 2px solid silver;
+    margin-top: 20px;
+  }
+}

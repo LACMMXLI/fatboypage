@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Interactivo - Fatboy Restaurant</title>
+  <!-- Fuente moderna desde Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Archivo de estilos CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Archivo JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Menú de Fatboy Restaurant</h1>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="mostrarCategoria('hamburguesas')">Hamburguesas</a></li>
+        <li><a href="#" onclick="mostrarCategoria('hotdogs')">Hot Dogs</a></li>
+        <li><a href="#" onclick="mostrarCategoria('boneless')">Boneless</a></li>
+        <li><a href="#" onclick="mostrarCategoria('alitas')">Alitas</a></li>
+        <li><a href="#" onclick="mostrarCategoria('sushi')">Sushi</a></li>
+        <li><a href="#" onclick="mostrarCategoria('mexicana')">Comida Mexicana</a></li>
+        <li><a href="#" onclick="mostrarCategoria('snacks')">Snacks</a></li>
+        <li><a href="#" onclick="mostrarCategoria('tortas')">Tortas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Contenedor de categorías -->
+    <div id="categorias">
+
+      <!-- ==================== HAMBURGUESAS ==================== -->
+      <div class="categoria active" id="hamburguesas">
+        <h2>Hamburguesas</h2>
+        <div class="productos">
+          <!-- Agregamos 30 productos de ejemplo -->
+          <!-- Para simplificar, repetimos imágenes y variamos el nombre y el precio -->
+          <!-- Ajusta los nombres de imágenes (hamburguesa1.jpg, hamburguesa2.jpg, etc.) según tus recursos -->
+          <!-- Puedes usar placeholders: src="https://via.placeholder.com/200?text=Hamburguesa+1" -->
+          <!-- Ejemplo de 30 productos con nombres y precios diferentes -->
+          <!-- ==== Inicio de 30 productos Hamburguesas ==== -->
+          <div class="producto" data-nombre="Hamburguesa Clásica #1" data-precio="110">
+            <img src="img/hamburguesa1.jpg" alt="Hamburguesa Clásica #1">
+            <p>Hamburguesa Clásica #1 - $110</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #2" data-precio="115">
+            <img src="img/hamburguesa2.jpg" alt="Hamburguesa Clásica #2">
+            <p>Hamburguesa Clásica #2 - $115</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #3" data-precio="120">
+            <img src="img/hamburguesa3.jpg" alt="Hamburguesa Clásica #3">
+            <p>Hamburguesa Clásica #3 - $120</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #4" data-precio="125">
+            <img src="img/hamburguesa4.jpg" alt="Hamburguesa Clásica #4">
+            <p>Hamburguesa Clásica #4 - $125</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #5" data-precio="130">
+            <img src="img/hamburguesa5.jpg" alt="Hamburguesa Clásica #5">
+            <p>Hamburguesa Clásica #5 - $130</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #6" data-precio="135">
+            <img src="img/hamburguesa6.jpg" alt="Hamburguesa Clásica #6">
+            <p>Hamburguesa Clásica #6 - $135</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #7" data-precio="110">
+            <img src="img/hamburguesa7.jpg" alt="Hamburguesa Clásica #7">
+            <p>Hamburguesa Clásica #7 - $110</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #8" data-precio="115">
+            <img src="img/hamburguesa8.jpg" alt="Hamburguesa Clásica #8">
+            <p>Hamburguesa Clásica #8 - $115</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #9" data-precio="120">
+            <img src="img/hamburguesa9.jpg" alt="Hamburguesa Clásica #9">
+            <p>Hamburguesa Clásica #9 - $120</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #10" data-precio="125">
+            <img src="img/hamburguesa10.jpg" alt="Hamburguesa Clásica #10">
+            <p>Hamburguesa Clásica #10 - $125</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #11" data-precio="130">
+            <img src="img/hamburguesa1.jpg" alt="Hamburguesa Clásica #11">
+            <p>Hamburguesa Clásica #11 - $130</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #12" data-precio="135">
+            <img src="img/hamburguesa2.jpg" alt="Hamburguesa Clásica #12">
+            <p>Hamburguesa Clásica #12 - $135</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #13" data-precio="110">
+            <img src="img/hamburguesa3.jpg" alt="Hamburguesa Clásica #13">
+            <p>Hamburguesa Clásica #13 - $110</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #14" data-precio="115">
+            <img src="img/hamburguesa4.jpg" alt="Hamburguesa Clásica #14">
+            <p>Hamburguesa Clásica #14 - $115</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #15" data-precio="120">
+            <img src="img/hamburguesa5.jpg" alt="Hamburguesa Clásica #15">
+            <p>Hamburguesa Clásica #15 - $120</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #16" data-precio="125">
+            <img src="img/hamburguesa6.jpg" alt="Hamburguesa Clásica #16">
+            <p>Hamburguesa Clásica #16 - $125</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #17" data-precio="130">
+            <img src="img/hamburguesa7.jpg" alt="Hamburguesa Clásica #17">
+            <p>Hamburguesa Clásica #17 - $130</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #18" data-precio="135">
+            <img src="img/hamburguesa8.jpg" alt="Hamburguesa Clásica #18">
+            <p>Hamburguesa Clásica #18 - $135</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #19" data-precio="110">
+            <img src="img/hamburguesa9.jpg" alt="Hamburguesa Clásica #19">
+            <p>Hamburguesa Clásica #19 - $110</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #20" data-precio="115">
+            <img src="img/hamburguesa10.jpg" alt="Hamburguesa Clásica #20">
+            <p>Hamburguesa Clásica #20 - $115</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #21" data-precio="120">
+            <img src="img/hamburguesa1.jpg" alt="Hamburguesa Clásica #21">
+            <p>Hamburguesa Clásica #21 - $120</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #22" data-precio="125">
+            <img src="img/hamburguesa2.jpg" alt="Hamburguesa Clásica #22">
+            <p>Hamburguesa Clásica #22 - $125</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #23" data-precio="130">
+            <img src="img/hamburguesa3.jpg" alt="Hamburguesa Clásica #23">
+            <p>Hamburguesa Clásica #23 - $130</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #24" data-precio="135">
+            <img src="img/hamburguesa4.jpg" alt="Hamburguesa Clásica #24">
+            <p>Hamburguesa Clásica #24 - $135</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #25" data-precio="110">
+            <img src="img/hamburguesa5.jpg" alt="Hamburguesa Clásica #25">
+            <p>Hamburguesa Clásica #25 - $110</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #26" data-precio="115">
+            <img src="img/hamburguesa6.jpg" alt="Hamburguesa Clásica #26">
+            <p>Hamburguesa Clásica #26 - $115</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #27" data-precio="120">
+            <img src="img/hamburguesa7.jpg" alt="Hamburguesa Clásica #27">
+            <p>Hamburguesa Clásica #27 - $120</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #28" data-precio="125">
+            <img src="img/hamburguesa8.jpg" alt="Hamburguesa Clásica #28">
+            <p>Hamburguesa Clásica #28 - $125</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #29" data-precio="130">
+            <img src="img/hamburguesa9.jpg" alt="Hamburguesa Clásica #29">
+            <p>Hamburguesa Clásica #29 - $130</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hamburguesa Clásica #30" data-precio="135">
+            <img src="img/hamburguesa10.jpg" alt="Hamburguesa Clásica #30">
+            <p>Hamburguesa Clásica #30 - $135</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <!-- ==== Fin de 30 productos Hamburguesas ==== -->
+        </div>
+      </div>
+
+      <!-- ==================== HOT DOGS ==================== -->
+      <div class="categoria" id="hotdogs">
+        <h2>Hot Dogs</h2>
+        <div class="productos">
+          <!-- 30 productos Hot Dogs de ejemplo -->
+          <!-- Ajusta imágenes y precios a tu gusto -->
+          <!-- Comenzamos con #1 hasta #30 -->
+          <div class="producto" data-nombre="Hot Dog #1" data-precio="60">
+            <img src="img/hotdog1.jpg" alt="Hot Dog #1">
+            <p>Hot Dog #1 - $60</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <!-- ... (Agrega más hot dogs hasta llegar a 30) -->
+          <!-- Para no extender el código, te muestro un bloque repetible -->
+          <!-- Copia y cambia el nombre y precio en cada uno -->
+
+          <!-- EJEMPLO de repetición (del #2 al #30) -->
+          <div class="producto" data-nombre="Hot Dog #2" data-precio="65">
+            <img src="img/hotdog2.jpg" alt="Hot Dog #2">
+            <p>Hot Dog #2 - $65</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <div class="producto" data-nombre="Hot Dog #3" data-precio="70">
+            <img src="img/hotdog3.jpg" alt="Hot Dog #3">
+            <p>Hot Dog #3 - $70</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <!-- ... Continúa hasta Hot Dog #30 ... -->
+          <!-- Recuerda cambiar el src de la imagen y el texto para cada uno -->
+        </div>
+      </div>
+
+      <!-- ==================== BONELESS ==================== -->
+      <div class="categoria" id="boneless">
+        <h2>Boneless</h2>
+        <div class="productos">
+          <!-- 30 productos Boneless de ejemplo -->
+          <div class="producto" data-nombre="Boneless #1" data-precio="120">
+            <img src="img/boneless1.jpg" alt="Boneless #1">
+            <p>Boneless #1 - $120</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <!-- ... Repite hasta #30 ... -->
+        </div>
+      </div>
+
+      <!-- ==================== ALITAS ==================== -->
+      <div class="categoria" id="alitas">
+        <h2>Alitas</h2>
+        <div class="productos">
+          <!-- 30 productos Alitas de ejemplo -->
+          <div class="producto" data-nombre="Alitas #1" data-precio="130">
+            <img src="img/alitas1.jpg" alt="Alitas #1">
+            <p>Alitas #1 - $130</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <!-- ... Repite hasta #30 ... -->
+        </div>
+      </div>
+
+      <!-- ==================== SUSHI ==================== -->
+      <div class="categoria" id="sushi">
+        <h2>Sushi</h2>
+        <div class="productos">
+          <!-- 30 productos Sushi de ejemplo -->
+          <div class="producto" data-nombre="Sushi #1" data-precio="100">
+            <img src="img/sushi1.jpg" alt="Sushi #1">
+            <p>Sushi #1 - $100</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <!-- ... Repite hasta #30 ... -->
+        </div>
+      </div>
+
+      <!-- ==================== COMIDA MEXICANA ==================== -->
+      <div class="categoria" id="mexicana">
+        <h2>Comida Mexicana</h2>
+        <div class="productos">
+          <!-- 30 productos Comida Mexicana de ejemplo -->
+          <div class="producto" data-nombre="Tacos #1" data-precio="90">
+            <img src="img/tacos1.jpg" alt="Tacos #1">
+            <p>Tacos #1 - $90</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <!-- ... Repite hasta #30 ... -->
+        </div>
+      </div>
+
+      <!-- ==================== SNACKS ==================== -->
+      <div class="categoria" id="snacks">
+        <h2>Snacks</h2>
+        <div class="productos">
+          <!-- 30 productos Snacks de ejemplo -->
+          <div class="producto" data-nombre="Snack #1" data-precio="45">
+            <img src="img/snack1.jpg" alt="Snack #1">
+            <p>Snack #1 - $45</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <!-- ... Repite hasta #30 ... -->
+        </div>
+      </div>
+
+      <!-- ==================== TORTAS ==================== -->
+      <div class="categoria" id="tortas">
+        <h2>Tortas</h2>
+        <div class="productos">
+          <!-- 30 productos Tortas de ejemplo -->
+          <div class="producto" data-nombre="Torta #1" data-precio="60">
+            <img src="img/torta1.jpg" alt="Torta #1">
+            <p>Torta #1 - $60</p>
+            <button onclick="agregarAlCarrito(this)">Agregar</button>
+          </div>
+          <!-- ... Repite hasta #30 ... -->
+        </div>
+      </div>
+
+    </div>
+    <!-- /#categorias -->
+
+    <!-- Carrito de compras al lado derecho -->
+    <aside id="carrito">
+      <h2>Carrito</h2>
+      <ul id="lista-carrito"></ul>
+      <p>Total: <span id="total">$0</span></p>
+      <a id="whatsapp" href="#" target="_blank">Enviar Pedido por WhatsApp</a>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Síguenos en:</p>
+    <a href="https://facebook.com" target="_blank">
+      <img src="facebook-icon.png" alt="Facebook">
+    </a>
+    <a href="https://instagram.com" target="_blank">
+      <img src="instagram-icon.png" alt="Instagram">
+    </a>
+    <a href="https://wa.me/123456789" target="_blank">
+      <img src="whatsapp-icon.png" alt="WhatsApp">
+    </a>
+  </footer>
+</body>
+</html>
